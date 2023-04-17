@@ -1,0 +1,17 @@
+.header-conversor{
+
+}
+
+.navbar {
+    background-color: #1A1D36 !important;
+  
+    left: 0px;
+  
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    will-change: background-color, height;
+    height: 72px;
+    z-index: 1;
+  }

@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.App{
+  background-color: #F3F5F7;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
