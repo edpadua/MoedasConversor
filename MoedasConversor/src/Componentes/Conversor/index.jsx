@@ -11,30 +11,42 @@ function Conversor() {
 
 
     const [opcoes, setOpcoes] = useState([]);
-    const [moedaOrigem, setMoedaOrigem] = useState("usd");
-    const [moedaFinal, setMoedaFinal] = useState("brl");
+    const [moedaOrigem, setMoedaOrigem] = useState("USD");
+    const [moedaFinal, setMoedaFinal] = useState("BRL");
     const [dados, setDados] = useState([]);
     const [entrada, setEntrada] = useState(0);
     const [saida, setSaida] = useState(0);
 
-    useEffect(() => {
-        Axios.get(
-            `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${moedaOrigem}.json`)
-            .then((res) => {
 
-                setDados(res.data[moedaOrigem]);
+
+   
+
+    useEffect(() => {
+
+        Axios.get('https://v6.exchangerate-api.com/v6/12f2738ade888e6a563b0fd5/latest/USD') //Returning pledges using a get-query
+            .then((response) => { // Data retrieval and processing
+                console.log("dados",response.data.conversion_rates);
+                setDados(response.data.conversion_rates);
             })
+            .catch((error) => { // If the query fails, an error will be displayed on the terminal.
+                console.error(error);
+            });
+
+
     }, [moedaOrigem]);
 
 
     useEffect(() => {
+        console.log("dados3", dados);
         setOpcoes(Object.keys(dados));
-        converter();
+
     }, [dados])
 
 
     function converter() {
+        console.log("taxa de conversão", dados[moedaFinal]);
         var taxaDeConversao = dados[moedaFinal];
+
         console.log("entrada", entrada);
         console.log("dtaxaDeConversao", taxaDeConversao);
         setSaida(entrada * taxaDeConversao);
