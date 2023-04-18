@@ -1,0 +1,29 @@
+.saida{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.container-button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-switch{
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.container-input {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.container-conversor {
+    width: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
