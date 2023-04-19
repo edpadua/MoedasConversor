@@ -29,6 +29,7 @@ This project is a currency conversion application. The user types the value that
 
 ### :iphone: Mobile design
 
+<img src="https://user-images.githubusercontent.com/4975360/233090787-ad6d05fe-3d5a-47ea-8805-aaabfe10b18a.png" style="width: 50%;">
 
 
 ### [🌐 Demo](moedas-conversor.vercel.app)
