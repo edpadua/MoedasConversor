@@ -16,7 +16,7 @@
  
 ## About
 
-This project is a currency conversion application. The user types the value that will be attributed to the source currency, chooses this source currency in a drop down menu, chooses the conversion currency in a second drop down menu and clicks on the conversion button. There is another button to toggle the coin order. de The exchange rates used to calculate the conversion are obtained by the exchangerate-api API and the consumption of these data is carried out with the Axios library. Another imported component in this project is the react-dropdown for the drop down menu with the list of currencies of several countries.
+This project is a currency conversion application. The user types the value that will be attributed to the source currency, chooses this source currency in a drop down menu, chooses the conversion currency in a second drop down menu and clicks on the conversion button. There is another button to toggle the coin order. The exchange rates used to calculate the conversion are obtained by the exchangerate-api API and the consumption of these data is carried out with the Axios library. Another imported component in this project is the react-dropdown for the drop down menu with the list of currencies of several countries.
 
 
 ### :desktop_computer: Desktop design
