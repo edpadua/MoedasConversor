@@ -18,12 +18,12 @@ function Conversor() {
     const [saida, setSaida] = useState(0);
 
 
-
+    const apiKey = import.meta.env.VITE_API_KEY;
    
 
     useEffect(() => {
 
-        Axios.get('https://v6.exchangerate-api.com/v6/12f2738ade888e6a563b0fd5/latest/USD') //Returning pledges using a get-query
+        Axios.get(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${moedaOrigem}`) //Returning pledges using a get-query
             .then((response) => { // Data retrieval and processing
                 console.log("dados",response.data.conversion_rates);
                 setDados(response.data.conversion_rates);
