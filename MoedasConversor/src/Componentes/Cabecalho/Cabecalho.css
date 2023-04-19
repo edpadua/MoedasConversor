@@ -15,3 +15,18 @@
     height: 72px;
     z-index: 1;
   }
+
+  .navbar-container {
+    color:#ffffff;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+  }
